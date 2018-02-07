@@ -1,0 +1,113 @@
+<!doctype html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>Tips</title>
+	  </head>
+	  <body>
+	      <style>body {
+    background-color: #ffff1a;
+}</style>
+   <!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    transition: background-color .5s;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="aboutme.html">About Me</a>
+  <a href="resume.html">Resume</a>
+  <a href="tips.html">Tips and Tricks</a>
+</div>
+
+<div id="main">
+  <h2></h2>
+  <p></p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+</div>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+    <center>
+    	<h1>Some Amazing tips and tricks!</h1>
+    	  <img src="images/tipsbanner.jpg" alt="tips banner" width="600" height="100"> </center>
+    	<br>
+    	<h2>Tips for scratch</h2>
+    	<b>- always be patient</b>
+    	<br>
+    	<b>- have fun</b>
+    	<br>
+    	<b>- use your pair programmer for help</b>
+    	<br>
+    	<b>- use the internet for help</b>
+    	<br>
+    	<br>
+    	<h2>General Tips</h2>
+    	<b>- google things for help</b>
+    	<br>
+    	<b>- always consult your pair programmer</b>
+    	<br>
+    	<b>- always try your best</b>
